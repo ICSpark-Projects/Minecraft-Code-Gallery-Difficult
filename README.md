@@ -2,7 +2,7 @@
 
 Now that you learned how to create variables and if/else statements, it's time to apply it to creating your website.  But not just any website, an ICSpark project about Minecraft.  There are many possibilities of implementing Minecraft coding references to a website, but for the sake of this project, we'll just stick with an Entity Gallery and Overworld Layers. 
 
-![Gallery1](images/Examples/MC_DataTypes_Gallery.png) ![Gallery3](images/Examples/Overworld_Layers_Gallery.png)
+![Gallery1](Project-Images/MC_DataTypes_Gallery.png) ![Gallery3](Project-Images/Overworld_Layers_Gallery.png)
 
 I'd like to give you a **warning** that this project is pretty lengthy and requires the repetition of creating variables.  Hence, why this project is divided into 3 parts. 
 
@@ -91,16 +91,14 @@ Notice how '+=' is used to join multiple strings together.  This is to add more 
 
 ### Part I: Setup
 
-Create a folder called MC_Code_Gallery.
-
-In this folder, create the following files:
+Create the following files:
   + index.html
   + overworld_layers.html
   + style.css
   + variables.js
   + script.js
 
-Next, download the images zip file at https://github.com/YJRenK9/MC-Code-Gallery/blob/main/images.zip (a download button should be present).  Drag that zip file in the folder called MC_Code_Gallery and unzip it.  You should have the images folder with minecraft images present in your project folder. 
+Next, download the images folder.  Upload it to your Replit project. 
 
 ### Part 2A: 1st HTML File (index.html)
 
@@ -159,10 +157,7 @@ Next, download the images zip file at https://github.com/YJRenK9/MC-Code-Gallery
 
 ### Part 3: CSS (style.css)
 
-  1.  link your CSS file to both of your HTML files by doing the following in the ```<head>``` tag:
-  ```css
-  <link rel="stylesheet" href="style.css">
-  ```
+  1.  link your CSS file to both of your HTML files by doing the following in the ```<head>``` tag
   2.  import the minecrafttia font by typing in the following:
   ```css
   @import url("https://fontlibrary.org//face/minecraftia");
@@ -208,21 +203,24 @@ The reason why we update the font family to the pre tags is because the font fro
 
 ### Part 4A: 1st JavaScript File (variables.js) 
 
-  1. add variables.js to index.html by doing the following inside the end of the ```<body>``` tag:
-  ```html
-  <!--  some html code that's above enabling JS  -->
-  <script src="variables.js"></script>
-  ```
-  2. The
-  3. 
+  1. link variables.js to index.html by doing the following inside the end of the ```<body>``` tag
+  2. create the following string variables
+    + dataType, stores "bool "
+    + variableName1, stores "activateGlitchArt"
+    + variableName2, stores "keepInventory"
+  3. create the following boolean variables
+    + boolValue1, stores false
+    + boolValue2, stores true
+  4. create a variable called paragraph1, that gets the element's id "booleans1"
+  5. have paragraph1's innerHTML string concactenate dataType, variableName1, " = ", and boolValue1 (**Hint:** use + in between variables)
+  6. have paragraph1's innerHTML also string concactenate "\t\t\t\t", dataType, variableName1, and boolValue2 (**Hint:** use +=)
+  7. create a variable called paragraph2, that gets the element's id "booleans2"
+  8. have paragraph2's innerHTML string concactenate dataType, variableName2, " = ", and boolValue1 (**Hint:** use + in between variables)
+  9. have paragraph1's innerHTML also string concactenate "\t\t\t\t", dataType, variableName2, and boolValue2 (**Hint:** use +=)
 
 ### Part 4B: 2nd JavaScript File (script.js)
 
-  1. add script.js to overworld_layers.html by doing the following inside the end of the ```<body>``` tag:
-  ```html
-  <!--  some html code that's above enabling JS  -->
-  <script src="script.js"></script>
-  ```
+  1. link script.js to overworld_layers.html by doing the following inside the end of the ```<body>``` tag:
   2. create five variables that gets the elements by ids
     + first variable is called Layer and takes the id called imageLayer
     + second variable is called descendVertically and takes the id called descend
@@ -318,4 +316,4 @@ Although it's easy to implement an input box, you'll deal with more test cases. 
 
 ### Create another webpage of Minecraft coding references
 
-Apply conditional operators (<, >, <=, >=, ==, !=) to ranking minecraft armor.  Apply the &&(and) and the ||(or) logical operators to when the player is able to go to sleep.  Those conditions are when it's night time or there's a thunderstorm and when there's no hostile mobs nearby.  Apply the !(not; negation) logical operator to when the mob is not hostile, the iron golem and snow golem won't attack that mob.  No if/else statements are invovled, however, try to output text to the webpage via a JavaScript file.    
+Apply conditional operators (<, >, <=, >=, ==, !=) to ranking minecraft armor.  Apply the &&(and) and the ||(or) logical operators to when the player is able to go to sleep.  Those conditions are when it's night time or there's a thunderstorm and when there's no hostile mobs nearby.  Apply the !(not; negation) logical operator to when the mob is not hostile, the iron golem and snow golem won't attack that mob.  No if/else statements are invovled, however, try to output text to the webpage via a JavaScript file.  Also, when outputing JavaScript text on the webpage, try to incorporate "\n" in your ```console.log()```'s.    
